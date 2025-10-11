@@ -3,10 +3,10 @@
 // To export something from a module we use 'module.exports' object
 // To import something from a module we use 'require' function
 
-export function calculateSum(a, b) {
+function calculateSum(a, b) {
   return a + b;
 }
 
 // module.exports = calculateSum;
 // Exporting as an object
-// module.exports = { calculateSum };
+module.exports = { calculateSum };

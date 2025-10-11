@@ -1,5 +1,9 @@
-require("./hello.js");
-const calculateSum = require("./sum.js");
+// const { calculateSum } = require("./sum.js");
+
+import { calculateSum } from "./sum.js";
+
+// require("./hello.js");
+// const { calculateSum } = require("./sum.js");
 
 let a = 5;
 let b = 6;

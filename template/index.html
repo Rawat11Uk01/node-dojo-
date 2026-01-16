@@ -27,6 +27,61 @@
         color: #fff;
       }
 
+      /* ===== Header / Navbar ===== */
+      header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 18px 40px;
+        background: rgba(255, 255, 255, 0.12);
+        backdrop-filter: blur(12px);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+        z-index: 1000;
+      }
+
+      nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        gap: 35px;
+      }
+
+      nav a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 1rem;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+        position: relative;
+        padding: 6px 0;
+        transition: color 0.3s ease;
+      }
+
+      nav a::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -4px;
+        width: 0;
+        height: 2px;
+        background: #ffd369;
+        transition: width 0.3s ease;
+      }
+
+      nav a:hover {
+        color: #ffd369;
+      }
+
+      nav a:hover::after {
+        width: 100%;
+      }
+
+      /* Push content down so header doesn't overlap */
+      body {
+        padding-top: 90px;
+      }
+
       .card {
         background: rgba(255, 255, 255, 0.12);
         backdrop-filter: blur(12px);
@@ -97,6 +152,15 @@
   </head>
 
   <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="/">home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/products">Products</a></li>
+        </ul>
+      </nav>
+    </header>
     <div class="card">
       <!-- Profile Image -->
       <img

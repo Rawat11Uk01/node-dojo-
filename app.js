@@ -10,19 +10,21 @@
 // console.log(calculateSum(a, b));
 // console.log(multiply(a, b));
 
-const readline = require("readline");
+// const readline = require("readline");
 
-const rl = readline.createInterface({
-  input: process.stdin,
-  output: process.stdout,
-});
+// const rl = readline.createInterface({
+//   input: process.stdin,
+//   output: process.stdout,
+// });
 
-rl.question("what is your name", (answer) => {
-  console.log("your name is", answer);
-  rl.close();
-});
+// rl.question("what is your name", (answer) => {
+//   console.log("your name is", answer);
+//   rl.close();
+// });
 
-rl.on("close", () => {
-  console.log("interface closed");
-  process.exit(0);
-});
+// rl.on("close", () => {
+//   console.log("interface closed");
+//   process.exit(0);
+// });
+
+console.log("hiii");

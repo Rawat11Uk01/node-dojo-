@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Borat Introduction</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      body {
+        min-height: 100vh;
+        background: linear-gradient(
+            rgba(30, 60, 114, 0.85),
+            rgba(42, 82, 152, 0.85)
+          ),
+          url("https://images.unsplash.com/photo-1523731407965-2430cd12f5e4")
+            no-repeat center / cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+      }
+
+      /* ===== Header / Navbar ===== */
+      header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 18px 40px;
+        background: rgba(255, 255, 255, 0.12);
+        backdrop-filter: blur(12px);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+        z-index: 1000;
+      }
+
+      nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        gap: 35px;
+      }
+
+      nav a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 1rem;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+        position: relative;
+        padding: 6px 0;
+        transition: color 0.3s ease;
+      }
+
+      nav a::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -4px;
+        width: 0;
+        height: 2px;
+        background: #ffd369;
+        transition: width 0.3s ease;
+      }
+
+      nav a:hover {
+        color: #ffd369;
+      }
+
+      nav a:hover::after {
+        width: 100%;
+      }
+
+      /* Push content down so header doesn't overlap */
+      body {
+        padding-top: 90px;
+      }
+
+      .card {
+        background: rgba(255, 255, 255, 0.12);
+        backdrop-filter: blur(12px);
+        padding: 45px 35px;
+        border-radius: 18px;
+        text-align: center;
+        max-width: 520px;
+        width: 90%;
+        box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4);
+        animation: fadeIn 1.2s ease;
+      }
+
+      .avatar {
+        width: 140px;
+        height: 140px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 5px solid #ffd369;
+        margin-bottom: 20px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+      }
+
+      .card h1 {
+        font-size: 2.4rem;
+        margin-bottom: 12px;
+      }
+
+      .card h1 span {
+        color: #ffd369;
+      }
+
+      .card p {
+        font-size: 1.1rem;
+        line-height: 1.6;
+        margin-bottom: 25px;
+        opacity: 0.95;
+      }
+
+      .card button {
+        background: #ffd369;
+        color: #1e3c72;
+        border: none;
+        padding: 12px 30px;
+        font-size: 1rem;
+        font-weight: bold;
+        border-radius: 30px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+
+      .card button:hover {
+        background: #fff;
+        transform: translateY(-3px);
+        box-shadow: 0 12px 25px rgba(0, 0, 0, 0.35);
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(25px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="/">home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/products">Products</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="card">
+      <!-- Profile Image -->
+      <img
+        class="avatar"
+        src="https://www.maxim.com/wp-content/uploads/2021/05/borat-mankini-scaled.jpg"
+        alt="Borat"
+      />
+
+      <h1>Hi! I am <span>Borat</span> 👋</h1>
+
+      <p>
+        Very nice to meet you! I come from a far, far land and I like you all
+        very much. This page is beautiful, powerful, and made with great
+        success!
+      </p>
+
+      <button>Great Success 👍</button>
+    </div>
+  </body>
+</html>

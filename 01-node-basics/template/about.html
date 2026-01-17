@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Borat</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      body {
+        background: #f4f7fb;
+        color: #333;
+        line-height: 1.7;
+      }
+
+      header {
+        background: linear-gradient(135deg, #1e3c72, #2a5298);
+        color: #fff;
+        padding: 70px 20px;
+        text-align: center;
+      }
+
+      header h1 {
+        font-size: 3rem;
+        margin-bottom: 10px;
+      }
+
+      header p {
+        font-size: 1.2rem;
+        max-width: 700px;
+        margin: auto;
+        opacity: 0.95;
+      }
+
+      .container {
+        max-width: 1100px;
+        margin: auto;
+        padding: 60px 20px;
+      }
+
+      .about-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 50px;
+        align-items: center;
+        margin-bottom: 80px;
+      }
+
+      .about-grid img {
+        width: 100%;
+        border-radius: 20px;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+      }
+
+      h2 {
+        font-size: 2.2rem;
+        margin-bottom: 15px;
+        color: #1e3c72;
+      }
+
+      p {
+        margin-bottom: 15px;
+        font-size: 1.05rem;
+      }
+
+      .highlight {
+        background: #eaf0ff;
+        padding: 25px;
+        border-left: 5px solid #1e3c72;
+        border-radius: 10px;
+        margin: 30px 0;
+      }
+
+      .facts {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 25px;
+        margin: 60px 0;
+      }
+
+      .fact-card {
+        background: #fff;
+        padding: 25px;
+        border-radius: 15px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+      }
+
+      .fact-card:hover {
+        transform: translateY(-6px);
+      }
+
+      .fact-card h3 {
+        margin-bottom: 10px;
+        color: #2a5298;
+      }
+
+      .timeline {
+        margin: 70px 0;
+      }
+
+      .timeline-item {
+        background: #fff;
+        padding: 25px;
+        border-radius: 15px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        margin-bottom: 25px;
+      }
+
+      .timeline-item span {
+        font-weight: bold;
+        color: #1e3c72;
+      }
+
+      footer {
+        background: #1e3c72;
+        color: #fff;
+        text-align: center;
+        padding: 30px 20px;
+        margin-top: 80px;
+      }
+
+      footer p {
+        opacity: 0.9;
+      }
+
+      @media (max-width: 768px) {
+        .about-grid {
+          grid-template-columns: 1fr;
+        }
+
+        header h1 {
+          font-size: 2.4rem;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>About Borat</h1>
+      <p>
+        Journalist. Traveler. Cultural Ambassador. A man of very strong opinions
+        and very small knowledge.
+      </p>
+    </header>
+
+    <main class="container">
+      <!-- Section 1 -->
+      <section class="about-grid">
+        <div>
+          <h2>Who is Borat?</h2>
+          <p>
+            Borat Sagdiyev is a traveling journalist from a small village with
+            very big dreams. Known for his enthusiasm, confidence, and unique
+            worldview, Borat explores foreign lands to learn customs, meet
+            people, and bring “great success” to his homeland.
+          </p>
+          <p>
+            His approach to life is direct, curious, and unapologetically
+            honest. Borat believes that every interaction is a lesson and every
+            journey is an opportunity for cultural exchange.
+          </p>
+
+          <div class="highlight">
+            <strong>Fun Fact:</strong> Borat believes smiling solves 90% of
+            global problems. The other 10% require a thumbs up 👍.
+          </div>
+        </div>
+
+        <img
+          src="https://media.gettyimages.com/id/111260473/photo/sacha-baron-cohen-as-borat-during-2006-mtv-movie-awards-backstage-and-audience-at-sony.jpg?s=612x612&w=gi&k=20&c=xfy4aP7ujlZ47zB-9pi9CZapM-b5tsZFlL3R181NfeI="
+          alt="Borat"
+        />
+      </section>
+
+      <!-- Section 2 -->
+      <section>
+        <h2>Personality & Values</h2>
+        <p>
+          Borat values honesty, confidence, and enthusiasm. He approaches the
+          world with childlike curiosity and fearless energy. While his
+          understanding of modern society may be questionable, his intentions
+          are always bold and sincere.
+        </p>
+        <p>
+          He believes that cultural misunderstandings are not barriers, but
+          opportunities to laugh, learn, and grow.
+        </p>
+      </section>
+
+      <!-- Facts -->
+      <section class="facts">
+        <div class="fact-card">
+          <h3>🌍 Nationality</h3>
+          <p>Proud citizen of a very small village with very big pride.</p>
+        </div>
+
+        <div class="fact-card">
+          <h3>🎤 Profession</h3>
+          <p>Journalist, interviewer, cultural researcher.</p>
+        </div>
+
+        <div class="fact-card">
+          <h3>🚗 Hobbies</h3>
+          <p>Traveling, meeting strangers, learning new customs.</p>
+        </div>
+
+        <div class="fact-card">
+          <h3>🏆 Life Motto</h3>
+          <p>"Great Success!"</p>
+        </div>
+      </section>
+
+      <!-- Timeline -->
+      <section class="timeline">
+        <h2>Life Journey</h2>
+
+        <div class="timeline-item">
+          <span>Early Life:</span> Grew up in a humble village surrounded by
+          strong traditions and even stronger opinions.
+        </div>
+
+        <div class="timeline-item">
+          <span>First Travels:</span> Left home to explore the world and
+          document cultures far different from his own.
+        </div>
+
+        <div class="timeline-item">
+          <span>International Fame:</span> Became widely known for his unique
+          interviews and unforgettable personality.
+        </div>
+
+        <div class="timeline-item">
+          <span>Today:</span> Continues to travel, learn, and spread confidence
+          and curiosity wherever he goes.
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2026 Borat. Very nice website. Great success.</p>
+    </footer>
+  </body>
+</html>

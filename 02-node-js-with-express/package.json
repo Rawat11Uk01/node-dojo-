@@ -5,11 +5,11 @@
   "license": "ISC",
   "author": "rain",
   "type": "commonjs",
-  "main": "app.ts",
+  "main": "server.ts",
   "scripts": {
-    "dev": "ts-node-dev --respawn --transpile-only app.ts",
+    "dev": "ts-node-dev --respawn --transpile-only server.ts",
     "build": "tsc",
-    "start": "node dist/app.js",
+    "start": "nodemon server.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {

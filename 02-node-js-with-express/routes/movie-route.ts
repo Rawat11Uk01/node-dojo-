@@ -6,14 +6,15 @@ const {
   getMovieById,
   updateMovie,
   deleteMovie,
+  checkMovie,
+  validateMovieBody,
 } = require("../controller/movie-controller");
 
-const moviesRoute = express.Router();
-moviesRoute.route("/").get(getAllMovies).post(addMovie);
-moviesRoute
-  .route("/:id")
-  .get(getMovieById)
-  .patch(updateMovie)
-  .delete(deleteMovie);
+const router = express.Router();
 
-module.exports = moviesRoute;
+router.param("id", checkMovie);
+
+router.route("/").get(getAllMovies).post(validateMovieBody, addMovie);
+router.route("/:id").get(getMovieById).patch(updateMovie).delete(deleteMovie);
+
+module.exports = { moviesRoute: router };

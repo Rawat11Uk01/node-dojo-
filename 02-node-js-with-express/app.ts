@@ -2,7 +2,7 @@ import express, { Request, Response } from "express";
 
 import { NextFunction } from "express";
 const morgan = require("morgan");
-const moviesRoute = require("./routes/movie-route");
+const { moviesRoute } = require("./routes/movie-route");
 // Extend Request interface to include custom properties
 declare global {
   namespace Express {
